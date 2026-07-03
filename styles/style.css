@@ -17,7 +17,7 @@
     flex-direction: column;
 
     background-color: #ffffff;
-    background-image: url("./background_header.svg");
+    background-image: url("../images/background_header.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -117,10 +117,6 @@
     position: relative;
 }
 
-.contacts {
-    height: 1px;
-    overflow: hidden;
-}
 
 .footer {
     padding: 40px 80px;
