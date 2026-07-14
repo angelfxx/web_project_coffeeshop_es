@@ -57,7 +57,136 @@
         </header>
 
         <main class="content">
-            <section class="reservation" id="reservation"></section>
+
+
+          <!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Café de especialidad en Triple Peaks" />
+    <title>Café Triple Peaks</title>
+
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./styles/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Noto+Serif:ital@1&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <div class="page">
+        <header class="header">
+            <nav class="nav">
+                <img src="./images/logo_coffeeshop_dark.svg" alt="Logo Triple Espresso" class="logo" />
+                <ul class="nav-links">
+                    <li>
+                        <a href="#reservation" class="nav-link">Reservar una mesa</a>
+                    </li>
+                    <li>
+                        <a href="#footer" class="nav-link">Contactos</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <h1 class="header-title">
+                <span class="span-accent">Café de especialidad</span>
+                en Triple Peaks
+            </h1>
+
+            <p class="header-description">
+                ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos café
+                para darte energía y motivar tu creatividad.
+            </p>
+
+            <img src="./images/inside_coffee_shop.png" alt="Ilustración de una cafetería" class="header-image" />
+
+            <div class="header-info">
+                <div class="header-hours">
+                    <p class="info-text">Horario:</p>
+                    <p class="info-text">Lunes a Viernes (de 10:00h a 19:00h)</p>
+                    <p class="info-text">Sábados y Domingos (de 11:00h a 18:00h)</p>
+                </div>
+
+                <p class="info-text">Avenida del Éxito 200, Ciudad Triple Peaks</p>
+            </div>
+        </header>
+
+        <main class="content">
+            <section class="reservation" id="reservation">
+  <h2 class="reservation__title">Reservar una mesa</h2>
+
+  <form class="reservation__form">
+    <fieldset class="reservation__fieldset">
+      <label class="reservation__label" for="name">Nombre *</label>
+      <input
+        class="reservation__input"
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Nombre"
+        required
+      />
+
+      <label class="reservation__label" for="guests">Número de comensales *</label>
+      <input
+        class="reservation__input"
+        type="number"
+        id="guests"
+        name="guests"
+        min="1"
+        max="8"
+        placeholder="1-8"
+        required
+      />
+
+      <label class="reservation__label" for="datetime">Fecha y hora *</label>
+      <input
+        class="reservation__input"
+        type="datetime-local"
+        id="datetime"
+        name="datetime"
+        required
+      />
+
+      <label class="reservation__label" for="email">Tu correo electrónico *</label>
+      <input
+        class="reservation__input"
+        type="email"
+        id="email"
+        name="email"
+        placeholder="email@email.com"
+        required
+      />
+
+      <button class="reservation__button" type="submit">
+        Reservar una mesa
+      </button>
+
+      <label class="reservation__label reservation__label_type_checkbox">
+        <input
+          class="reservation__checkbox"
+          type="checkbox"
+          name="terms"
+          required
+        />
+        Acepto los términos de uso
+      </label>
+    </fieldset>
+  </form>
+</section>
+        </main>
+        <footer class="footer" id="footer">
+        </footer>
+    </div>
+</body>
+
+</html>
         </main>
         <footer class="footer" id="footer">
         </footer>
